@@ -11,8 +11,8 @@ export async function get(params) {
 	const { location, current } = data;
 	const { name, region, country, localtime } = location;
 	const { condition, humidity, feelslike_c, is_day, temp_c, wind_kph, wind_dir } = current;
-	const { code, text } = condition;
-
+	const { code, icon, text } = condition;
+	
 	const body = {
 		name,
 		region,
@@ -25,6 +25,7 @@ export async function get(params) {
 		wind_kph,
 		wind_dir,
 		code,
+		icon,
 		text
 	};
 

@@ -1,15 +1,21 @@
+<script>
+	export let humidity;
+	export let feelslike_c;
+	export let wind_kph;
+</script>
+
 <footer class="flex text-center">
 	<div>
 		<strong>Humidity</strong>
-		<span>33%</span>
+		<span>{humidity}%</span>
 	</div>
 	<div>
 		<strong>Feels Like</strong>
-		<span>18ªC</span>
+		<span>{feelslike_c}<sup>o</sup>C</span>
 	</div>
 	<div>
 		<strong>Wind Speed</strong>
-		<span>4Kph</span>
+		<span>{wind_kph}Kph</span>
 	</div>
 </footer>
 
