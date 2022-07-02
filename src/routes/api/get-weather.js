@@ -12,7 +12,7 @@ export async function get(params) {
 	const { name, region, country, localtime } = location;
 	const { condition, humidity, feelslike_c, is_day, temp_c, wind_kph, wind_dir } = current;
 	const { code, icon, text } = condition;
-	
+
 	const body = {
 		name,
 		region,
